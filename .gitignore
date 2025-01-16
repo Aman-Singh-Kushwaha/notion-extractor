@@ -1,3 +1,5 @@
 /scrapper-venv
 /venv
 /.venv
+
+.env

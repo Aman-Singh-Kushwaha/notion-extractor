@@ -73,7 +73,7 @@ def expand_and_scrape(url):
         driver.quit()
 
 # Notion public URL
-notion_url = "https://crustdata.notion.site/Crustdata-Discovery-And-Enrichment-API-c66d5236e8ea40df8af114f6d447ab48"
+notion_url = "https://crustdata.notion.site/Crustdata-Data-Dictionary-c265aa415fda41cb871090cbf7275922"
 expand_and_scrape(notion_url)
 
 
