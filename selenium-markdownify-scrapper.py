@@ -73,8 +73,17 @@ def expand_and_scrape(url):
         driver.quit()
 
 # Notion public URL
-notion_url = "https://crustdata.notion.site/Crustdata-Data-Dictionary-c265aa415fda41cb871090cbf7275922"
-expand_and_scrape(notion_url)
+notion_urls = [
+    "https://crustdata.notion.site/Crustdata-Discovery-And-Enrichment-API-c66d5236e8ea40df8af114f6d447ab48"
+    "https://crustdata.notion.site/Crustdata-Data-Dictionary-c265aa415fda41cb871090cbf7275922",
+    "https://crustdata.notion.site/Crustdata-Dataset-API-Detailed-Examples-b83bd0f1ec09452bb0c2cac811bba88c",
+    
+]
+
+for index, notion_url in enumerate(notion_urls):
+    print(f"Processing {index + 1}/{len(notion_urls)}: {notion_url}")
+    expand_and_scrape(notion_url)
+    print(f"Finished processing {index + 1}/{len(notion_urls)}")
 
 
 
